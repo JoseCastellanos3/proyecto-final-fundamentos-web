@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Productos - Floristería</title>
     <link rel="stylesheet" href="../estilos/styles.css"> <!-- Vamos a hacer este después -->
+    <style>
+        #indicacionesCodigo {
+            display: none;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -37,7 +43,7 @@
                     <option value="">Seleccione una imagen</option>
                     <option value="../imagenes/rosa1.jpg">Rosa Roja</option>
                     <option value="../imagenes/tulipan1.jpg">Tulipán Amarillo</option>
-                    <option value="../html/orquidea1.jpg">Orquídea Blanca</option>
+                    <option value="../imagenes/orquidea1.jpg">Orquídea Blanca</option>
                     <option value="../imagenes/lirio1.jpg">Lirio Azul</option>
                     <option value="../imagenes/girasol1.jpg">Girasol Grande</option>
                     <!-- Agregaremos más opciones después -->
@@ -71,7 +77,36 @@
             <nav class="barra-navegacion">
                 <a class="boton" href="../html/productos.html">Volver a Productos</a>
             </nav>
-            </form>
+            <section id="indicacionesCodigo" style="display: none; margin-top: 2rem;">
+                <h2>Indicaciones para un Código Correcto</h2>
+                <table border="1" style="width: 100%; text-align: center; margin-top: 1rem;">
+                    <thead>
+                        <tr>
+                            <th>Requisito</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Longitud</td>
+                            <td>Mínimo 8 caracteres</td>
+                        </tr>
+                        <tr>
+                            <td>Mayúscula</td>
+                            <td>Debe contener al menos una letra mayúscula (A-Z)</td>
+                        </tr>
+                        <tr>
+                            <td>Minúscula</td>
+                            <td>Debe contener al menos una letra minúscula (a-z)</td>
+                        </tr>
+                        <tr>
+                            <td>Números</td>
+                            <td>Debe contener al menos dos números (0-9)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>            
+    </form>
     </main>
     <script src="../javaScript/registro.js"></script>
 </body>

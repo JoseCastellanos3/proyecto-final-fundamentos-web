@@ -21,9 +21,11 @@ formulario.addEventListener('submit', function(event) {
     }
 
     if (!/[a-z]/.test(codigo) || !/[A-Z]/.test(codigo) || !/\d.*\d/.test(codigo) || codigo.length < 8) {
-        alert('El código debe tener mínimo 8 caracteres, una minúscula, una mayúscula y 2 números.');
+        window.location.href = 'indicaciones.html';
         return;
     }
+    
+    
 
     if (isNaN(precio) || precio <= 0) {
         alert('Ingrese un precio válido.');
