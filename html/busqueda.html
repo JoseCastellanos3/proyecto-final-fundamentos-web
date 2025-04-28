@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Productos - Floristería Rosas del Alba</title>
+    <link rel="stylesheet" href="../estilos/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Buscar Productos</h1>
+        <nav class="barra-navegacion">
+            <a href="../html/productos.html"><button>Volver a Productos</button></a>
+            <a href="../html/registro.html"><button>Registrar Producto</button></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="filtros">
+            <h2>Filtros de Búsqueda</h2>
+            <input type="text" id="buscarNombre" placeholder="Buscar por nombre">
+            <input type="text" id="buscarCategoria" placeholder="Buscar por categoría">
+            <input type="text" id="buscarColor" placeholder="Buscar por color">
+
+            <div class="botones">
+                <button id="botonBuscar">Buscar</button>
+                <button id="botonLimpiar">Limpiar</button>
+            </div>
+        </section>
+
+        <section id="loading" style="display: none; text-align: center; margin-top: 2rem;">
+            <p>Cargando resultados...</p>
+        </section>
+
+        <section id="resultados">
+            <!-- Aquí aparecerán los resultados de la búsqueda -->
+        </section>
+    </main>
+
+    <script src="../javaScript/data.js"></script>
+    <script src="../javaScript/busqueda.js"></script> <!-- Vamos a crear este archivo -->
+</body>
+</html>

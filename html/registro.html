@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Productos - Floristería</title>
+    <link rel="stylesheet" href="../estilos/styles.css"> <!-- Vamos a hacer este después -->
+</head>
+<body>
+    <header>
+        <h1>Registro de Productos - Floristería Rosas del Alba</h1>
+        <p>Registra aquí las nuevas flores y productos disponibles para nuestros clientes.</p>
+    </header>
+
+    <main>
+        <form id="formularioRegistro">
+            <div>
+                <label for="nombre">Nombre del Producto:</label>
+                <input type="text" id="nombre" name="nombre" maxlength="20" required>
+            </div>
+
+            <div>
+                <label for="categoria">Categoría:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="">Seleccione una categoría</option>
+                    <option value="Rosas">Rosas</option>
+                    <option value="Tulipanes">Tulipanes</option>
+                    <option value="Orquídeas">Orquídeas</option>
+                    <option value="Lirios">Lirios</option>
+                    <option value="Girasoles">Girasoles</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="imagen">Imagen:</label>
+                <select id="imagen" name="imagen" required>
+                    <option value="">Seleccione una imagen</option>
+                    <option value="../imagenes/rosa1.jpg">Rosa Roja</option>
+                    <option value="../imagenes/tulipan1.jpg">Tulipán Amarillo</option>
+                    <option value="../html/orquidea1.jpg">Orquídea Blanca</option>
+                    <option value="../imagenes/lirio1.jpg">Lirio Azul</option>
+                    <option value="../imagenes/girasol1.jpg">Girasol Grande</option>
+                    <!-- Agregaremos más opciones después -->
+                </select>
+            </div>
+
+            <div>
+                <label for="codigo">Código del Producto:</label>
+                <input type="text" id="codigo" name="codigo" required>
+            </div>
+
+            <div>
+                <label for="precio">Precio (COP):</label>
+                <input type="number" id="precio" name="precio" required>
+            </div>
+
+            <div>
+                <label for="color">Color:</label>
+                <input type="text" id="color" name="color">
+            </div>
+
+            <div>
+                <label for="tamaño">Tamaño:</label>
+                <input type="text" id="tamaño" name="tamaño">
+            </div>
+
+            <div class="botones">
+                <button type="submit">Registrar Producto</button>
+                <button type="reset">Limpiar Campos</button>
+            </div>
+            <nav class="barra-navegacion">
+                <a class="boton" href="../html/productos.html">Volver a Productos</a>
+            </nav>
+            </form>
+    </main>
+    <script src="../javaScript/registro.js"></script>
+</body>
+</html>

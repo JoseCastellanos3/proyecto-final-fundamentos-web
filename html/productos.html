@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Floristería Rosas del Alba</title>
+    <link rel="stylesheet" href="../estilos/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Productos disponibles</h1>
+        <nav class="barra-navegacion">
+            <a href="../html/registro.html"><button>Registrar Producto</button></a>
+            <a href="../html/busqueda.html"><button>Buscar Producto</button></a> <!-- después crearemos busqueda.html -->
+        </nav>
+    </header>
+
+    <main>
+        <section id="productos" class="contenedor-productos">
+            <!-- Aquí van a cargarse las tarjetas de productos con JavaScript -->
+        </section>
+
+        <div class="paginacion">
+            <button id="anterior" disabled>Anterior</button>
+            <span id="paginaActual">Página 1</span>
+            <button id="siguiente">Siguiente</button>
+        </div>
+    </main>
+
+    <script src="../javaScript/data.js"></script> <!-- Archivo con los productos -->
+    <script src="../javaScript/productos.js"></script> <!-- Archivo que haremos para cargar y paginar -->
+</body>
+</html>
