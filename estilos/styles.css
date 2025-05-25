@@ -300,19 +300,3 @@ button:hover {
     flex-direction: column;
 }
 
-/* Estilos para el botón de eliminar producto */
-.eliminar-producto {
-    background-color: #e74c3c; /* Rojo */
-    color: #ffffff;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    transition: background-color 0.3s;
-}
-
-.eliminar-producto:hover {
-    background-color: #c0392b; /* Rojo más oscuro */
-}
-
