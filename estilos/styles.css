@@ -227,15 +227,64 @@ button:hover {
 
 .main-indicaciones {
     width: 100%;
-    max-width: 600px; /* Aplica el max-width solo a la página de indicaciones */
+    max-width: 800px; /* Ajusta el ancho máximo según tus preferencias */
     margin: 2rem auto;
     background-color: #ffffff;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+
+.indicaciones-section {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.indicaciones-section h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.indicaciones-section p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.indicaciones-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.indicaciones-section li {
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.indicaciones-button-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.indicaciones-button-link {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.indicaciones-button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #219ebc;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.indicaciones-button:hover {
+    background-color: #023047;
 }
 
 .main-busqueda {
@@ -249,5 +298,21 @@ button:hover {
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+/* Estilos para el botón de eliminar producto */
+.eliminar-producto {
+    background-color: #e74c3c; /* Rojo */
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.eliminar-producto:hover {
+    background-color: #c0392b; /* Rojo más oscuro */
 }
 
